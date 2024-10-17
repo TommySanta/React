@@ -5,11 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ServicioCustomers from './components/ServicioCustomers';
 import BuscadorCustomer from './components/BuscadorCustomer';
+import BuscadorCoches from './components/BuscadorCoches';
+import BuscadorDepartEmpleados from './components/BuscadorDepartEmpleados';
+import EmpleadosOficios from './components/EmpleadosOficios';
+import Departamentos from './components/MaestroDetalle/Departamentos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-  <BuscadorCustomer/>
+  <Departamentos/>
   
 );
 
