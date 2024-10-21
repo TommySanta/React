@@ -4,7 +4,8 @@ import Global from '../../Global';
 
 export default class Empleados extends Component {
     state = {
-        empledos: []
+        empledos: [],
+        texto: ""
     }
     loadEmpleados = () =>{
         let idDepartamento =this.props.iddepartamento;
@@ -20,6 +21,17 @@ export default class Empleados extends Component {
 
     componentDidMount = () =>{
         this.loadEmpleados();
+    }
+    componentDidUpdate = (oldProps) =>{
+        console.log("Dibujando component");
+        console.log("Old props= "+oldProps.iddepartamento)
+        if(oldProps.iddepartamento != this.props.iddepartamento){
+            // this.setState({
+            //     texto: "Update: " + this.props.iddepartamento
+            // })
+            this.loadEmpleados();
+        }
+        
     }
     render() {
         return (
