@@ -22,9 +22,6 @@ export default class MenuDepartamentos extends Component {
                                 <li className="nav-item">
                                     <NavLink className="nav-link active" aria-current="page" to="/detalle">Detalle</NavLink>
                                 </li>
-                                <li className="nav-item">
-                                    <NavLink className="nav-link active" aria-current="page" to="/update">Update departamento</NavLink>
-                                </li>
                             </ul>
                         </div>
                     </div>

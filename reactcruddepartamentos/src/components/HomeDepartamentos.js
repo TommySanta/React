@@ -48,6 +48,7 @@ export default class HomeDepartamentos extends Component {
                                 <th>Localidad</th>
                                 <th>Enlace</th>
                                 <th>Update</th>
+                                <th>Eliminar</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -58,9 +59,6 @@ export default class HomeDepartamentos extends Component {
                                         <td>{dpto.nombre}</td>
                                         <td>{dpto.localidad}</td>
                                         <td>
-                                            <button className="btn btn-danger" onClick={()=>{
-                                                this.deleteDepartamento(dpto.numero);
-                                            }}>Eliminar </button>
                                             <NavLink to={"/detalle/"+dpto.numero}>
                                                 Detalles
                                             </NavLink>
@@ -68,6 +66,11 @@ export default class HomeDepartamentos extends Component {
                                         <td>
                                             <NavLink to={"/update/"+dpto.numero+"/"+dpto.nombre+"/"+dpto.localidad}>
                                                 Update
+                                            </NavLink>
+                                        </td>
+                                        <td>
+                                            <NavLink to={"/delete/"+dpto.numero}>
+                                                <button className="btn btn-danger">Eliminar</button>
                                             </NavLink>
                                         </td>
                                     </tr>
