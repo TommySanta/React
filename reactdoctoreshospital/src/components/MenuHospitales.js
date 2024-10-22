@@ -32,16 +32,19 @@ export default class MenuHospitales extends Component {
                         <div className="collapse navbar-collapse" id="navbarsExample03">
                             <ul className="navbar-nav me-auto mb-2 mb-sm-0">
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                    <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Link</a>
+                                    <NavLink className="nav-link" to="/create">New hospital</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+                                    <NavLink className="nav-link" to="/hospitales">Hospitales</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link disabled" aria-disabled="true">Disabled</NavLink>
                                 </li>
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                                    <NavLink className="nav-link dropdown-toggle" to="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</NavLink>
                                     <ul className="dropdown-menu">
                                         {
                                             this.state.hospitales.map((hospital, index) => {
