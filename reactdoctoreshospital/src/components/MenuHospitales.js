@@ -62,7 +62,7 @@ export default class MenuHospitales extends Component {
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown VP"</a>
                                     <ul className="dropdown-menu">
-                                        {
+                                        {/* {
                                             this.state.hospitales.map((hospital, index) => {
                                                 return (
                                                     <li key={index}>
@@ -72,7 +72,7 @@ export default class MenuHospitales extends Component {
                                                         </NavLink></li>
                                                 )
                                             })
-                                        }
+                                        } */}
                                     </ul>
                                 </li>
                             </ul>
